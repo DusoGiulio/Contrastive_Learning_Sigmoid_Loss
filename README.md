@@ -1,0 +1,1 @@
+Su questo link drive https://drive.google.com/drive/folders/1knHZOF-oiEDl5fsJvqHVz5ClMTquBAbN?usp=sharing è possibile trovare il modello addestrato, e i due file json contenti i CLS necessari per poter rieseguire l'addestramento
