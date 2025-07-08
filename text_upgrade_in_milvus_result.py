@@ -1,3 +1,44 @@
+######################CREA BITMASK 01#############################
+# import pandas as pd
+
+# df = pd.read_csv("mimic_data/mimic-cxr-2.0.0-chexpert.csv")
+
+# label_cols = [
+#     "Atelectasis", "Cardiomegaly", "Consolidation", "Edema",
+#     "Enlarged Cardiomediastinum", "Fracture", "Lung Lesion",
+#     "Lung Opacity", "No Finding", "Pleural Effusion",
+#     "Pleural Other", "Pneumonia", "Pneumothorax", "Support Devices"
+# ]
+# # Funzione per creare la bitmask
+# def make_bitmask(row):
+#     return ''.join(['1' if row[col] == 0 else '0' for col in label_cols])
+
+# df["bitmask_0_1"] = df.apply(make_bitmask, axis=1)
+
+# df.to_csv("mimic_data/mimic-cxr-2.0.0-chexpert.csv", index=False)
+###############################################################
+##################MERGE BITMASK e TEST
+# import pandas as pd
+
+# # Forza bitmask_0_1 come stringa per non perdere zeri iniziali
+# df_chexpert = pd.read_csv("mimic_data/mimic-cxr-2.0.0-chexpert.csv", dtype={"bitmask_0_1": str})
+# df_test = pd.read_csv("mimic_data/test.csv")
+# # Merge sulle chiavi corrette
+# df_merged = pd.merge(
+#     df_test,
+#     df_chexpert[["subject_id", "study_id", "bitmask_0_1"]],
+#     on=["subject_id", "study_id"],
+#     how="left"
+# )
+
+# # Salva il file preservando gli zeri iniziali
+# df_merged.to_csv("mimic_data/test.csv", index=False)
+
+# # Mostra l'anteprima
+# print(df_merged[["subject_id", "study_id", "bitmask_0_1"]].head())
+
+#######################################################################
+
 import json
 import pandas as pd
 
