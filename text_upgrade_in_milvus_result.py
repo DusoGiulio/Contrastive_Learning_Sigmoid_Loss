@@ -4,14 +4,14 @@ import pandas as pd
 # File paths
 input_result_file = "milvus_search_data_test_t10_cosine.json"
 csv_report_file = "mimic_data/test.csv"
-output_file = "milvus_cosine_text_upgrade.json"
+output_file = "Cosine_Matrix_Text_Label.json"
 
 # Carica i risultati delle ricerche Milvus
 with open(input_result_file, 'r', encoding='utf-8') as f:
     search_results = json.load(f)
 
 # Carica il CSV contenente i report
-df_reports = pd.read_csv(csv_report_file)
+df_reports = pd.read_csv(csv_report_file,dtype={"bitmask_0_1": str})
 
 # Verifica che la colonna 'report' esista
 if "report" not in df_reports.columns:
@@ -19,7 +19,7 @@ if "report" not in df_reports.columns:
 
 # Lista dei report posizionali
 reports = df_reports["report"].tolist()
-
+labels = df_reports["bitmask_0_1"]
 # Costruisci il nuovo output con i report testuali associati
 enriched_results = []
 
@@ -32,7 +32,9 @@ for entry in search_results:
     enriched_entry = {
         "query_text_row_id": query_index,
         "query_text_report": query_report,
+        "label":str(labels[query_index]),
         "top_similar_images": []
+        
     }
 
     for match in entry.get("top_similar_images", []):
@@ -44,7 +46,8 @@ for entry in search_results:
         enriched_entry["top_similar_images"].append({
             "found_image_id": image_index,
             "similarity_distance_cosine": similarity,
-            "associated_report": image_report
+            "associated_report": image_report,
+            "label":str(labels[image_index])
         })
 
     enriched_results.append(enriched_entry)
@@ -53,4 +56,3 @@ for entry in search_results:
 with open(output_file, 'w', encoding='utf-8') as f:
     json.dump(enriched_results, f, indent=4)
 
-print(f"✅ File arricchito salvato in: {output_file}")
