@@ -45,7 +45,7 @@ Funzionano **solo se i dati sono scaricati dalla seguente cartella Google Drive*
 │
 ├── 📦 Syntetic_dataset.zip
 └── 📦 mimic_data.zip
-
+```
 
 - **`Syntetic_dataset.zip`** e **`mimic_data.zip`**: contengono i dataset sintetici e reali usati per l’addestramento e la valutazione.
 - **`Matrici di similarità usate per addestramento/`**: include le matrici di similarità (coseno o binarie) utilizzate per guidare l'apprendimento contrastivo.
