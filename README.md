@@ -30,8 +30,21 @@ Funzionano **solo se i dati sono scaricati dalla seguente cartella Google Drive*
 
 ### 📦 Contenuto della cartella Google Drive
 
-
-<pre> ```plaintext 📁 Cartella principale │ \n├── 📁 Result_Syntetic_COSINE \n├── 📁 Result_Syntetic_01 \n├── 📁 Result_MIMIC_COSINE \n├── 📁 Result_MIMIC_BASE \n├── 📁 Result_MIMIC_01 │ \n├── 📁 Matrici di similarità usate per addestramento \n├── 📁 chexnet \n├── 📁 bert │ \n├── 📦 Syntetic_dataset.zip \n└── 📦 mimic_data.zip ``` </pre>
+```plaintext
+📁 Cartella principale
+│
+├── 📁 Result_Syntetic_COSINE
+├── 📁 Result_Syntetic_01
+├── 📁 Result_MIMIC_COSINE
+├── 📁 Result_MIMIC_BASE
+├── 📁 Result_MIMIC_01
+│
+├── 📁 Matrici di similarità usate per addestramento
+├── 📁 chexnet
+├── 📁 bert
+│
+├── 📦 Syntetic_dataset.zip
+└── 📦 mimic_data.zip
 
 
 - **`Syntetic_dataset.zip`** e **`mimic_data.zip`**: contengono i dataset sintetici e reali usati per l’addestramento e la valutazione.
