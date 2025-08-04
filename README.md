@@ -60,6 +60,6 @@ Funzionano **solo se i dati sono scaricati dalla seguente cartella Google Drive*
 ## 📌 Note aggiuntive
 
 - Le cartelle con **"COSINE"** si riferiscono ad addestramenti basati su **matrici di similarità coseno** tra gli embedding.
-- Le cartelle con **"01"** indicano l’uso di **matrici di similarità binarie** (0 o 1) per guidare l’ottimizzazione contrastiva.
+- Le cartelle con **"-1_1"** indicano l’uso di **matrici di similarità binarie** (-1 o 1) per guidare l’ottimizzazione contrastiva.
 
 ---
