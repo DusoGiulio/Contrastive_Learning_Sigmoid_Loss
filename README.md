@@ -20,6 +20,7 @@ In entrambe le cartelle principali, gli script per **addestrare, testare e valut
 ## ⚠️ Requisiti
 
 I codici sono stati eseguiti con **PyTorch 2.4.0**.
+Il calcolo delle metriche e dei risultati tramite retrival di Milvus è subordinato all'avvio di un Doker Milvus.
 
 Funzionano **solo se i dati sono scaricati dalla seguente cartella Google Drive**, rispettando la struttura prevista:
 
