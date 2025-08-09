@@ -9,10 +9,13 @@ import os
 #output_json_file_path = "syntetic/results/Milvus_Syn_Cosine_retrieved.json"
 #COLLECTION_NAME = "Cosine_Syn"
 #_________________________________
-json_file_path = r"syntetic/results/test_Syn_01.json"
-output_json_file_path = "syntetic/results/Milvus_Syn_01_retrieved.json"
-COLLECTION_NAME = "Bitmask_Syn"
-
+#json_file_path = r"syntetic/results/test_Syn_01.json"
+#output_json_file_path = "syntetic/results/Milvus_Syn_01_retrieved.json"
+#COLLECTION_NAME = "Bitmask_Syn"
+#_________________________________
+json_file_path = r"syntetic_1/test_syn_without_siamese.json"
+output_json_file_path = "syntetic_1/Milvus_syn_without_siamese_retrieved.json"
+COLLECTION_NAME = "syn_without_siamese"
 
 VECTOR_DIMENSION = 1024
 

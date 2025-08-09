@@ -2,8 +2,8 @@ import json
 import numpy as np
 
 # Percorso al file salvato da Milvus
-input_file = "syntetic/results/Milvus_Syn_01_retrieved.json"
-output_metrics_file = "syntetic/results/Metrics_Milvus_Syn_01.json"
+input_file = "syntetic_1/Milvus_syn_without_siamese_retrieved.json"
+output_metrics_file = "syntetic_1/Metrics_syn_without_siamese_retrieved.json"
 
 with open(input_file, 'r', encoding='utf-8') as f:
     data = json.load(f)
