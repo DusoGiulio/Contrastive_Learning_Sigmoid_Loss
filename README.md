@@ -39,6 +39,7 @@ Funzionano **solo se i dati sono scaricati dalla seguente cartella Google Drive*
 ├── 📁 Result_MIMIC_COSINE
 ├── 📁 Result_MIMIC_BASE
 ├── 📁 Result_MIMIC_01
+├── 📁 Result_MIMIC_01Result_Syntetic_without_siamese
 │
 ├── 📁 Matrici di similarità usate per addestramento
 ├── 📁 chexnet
