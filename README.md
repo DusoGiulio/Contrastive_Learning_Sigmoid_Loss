@@ -7,7 +7,9 @@ In entrambe le cartelle principali, gli script per **addestrare, testare e valut
 > 🔁 Nella cartella [MIMIC](https://github.com/DusoGiulio/Contrastive_Learning_Sigmoid_Loss/tree/main/MIMIC) sono presenti **due script con numero 0**.  
 > Il file [`0_Test_Base.py`](https://github.com/DusoGiulio/Contrastive_Learning_Sigmoid_Loss/blob/main/MIMIC/0_Test_Base.py) utilizza una rete Siamese **senza livelli MLP**, con lo scopo di fornire una **baseline comparativa**.  
 > In questo caso, la sequenza consigliata di esecuzione sarà: `0 -> 2 -> 3 -> 4`, ricordandosi di **aggiornare correttamente i path** nei vari script.
-
+> 🔁 Nella cartella [Syntetic](https://github.com/DusoGiulio/Contrastive_Learning_Sigmoid_Loss/tree/main/Syntetic) sono presenti **due script con numero 1**.  
+> Il file [`1_Test_Syntetic_without_siamese.py`](https://github.com/DusoGiulio/Contrastive_Learning_Sigmoid_Loss/blob/main/Syntetic/1_Test_Syntetic_without_siamese.py) utilizza una rete Siamese **senza livelli MLP**, con lo scopo di fornire una **baseline comparativa**.  
+> In questo caso, la sequenza consigliata di esecuzione sarà: `1 -> 2 -> 3 `, ricordandosi di **aggiornare correttamente i path** nei vari script.
 ---
 
 ## 📁 Struttura del repository
